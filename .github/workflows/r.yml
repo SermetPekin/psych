@@ -32,8 +32,7 @@ jobs:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "rcmdcheck" , "mnormt" , "parallel" , "stats" , "graphics" , "grDevices",
-          "methods" , "lattice" , "nlme"))
+          install.packages(c("remotes", "rcmdcheck" , "mnormt" , "parallel" , "stats" , "graphics" , "grDevices", "methods" , "lattice" , "nlme"))
           #remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
